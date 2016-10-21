@@ -1,0 +1,167 @@
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {     
+  background: #BE93C5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #BE93C5, #7BC6CC);
+  background: -o-linear-gradient(right, #BE93C5, #7BC6CC);
+  background: linear-gradient(to left, #BE93C5, #7BC6CC); /* Chrome 10-25, Safari 5.1-6 */
+  border-radius: 0;
+  border: 0;
+}    
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.logo{
+  width: 7em;
+  padding: 5px;
+}
+#logo-img {
+  background: url('../images/nivi.jpg') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 20px 10px 0;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { 
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { 
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 15px;
+}
+#nav-list a {
+  color: #ffffff;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #6699ff;
+  opacity: 0.6;
+}
+#nav-list a span {
+  font-size: 1.3em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #ffffff;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/nivi-med.jpg') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 15px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  /* End Header */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  /* End Header */
+
+}
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
