@@ -110,7 +110,7 @@ body {
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-  .navbar-brand p { /* Kosher cert */
+  .navbar-brand p { 
     font-size: .6em;
     margin-top: 12px;
   }
