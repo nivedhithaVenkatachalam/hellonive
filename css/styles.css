@@ -17,7 +17,8 @@ header{
   /*height:45px;*/  
 }
 #header-nav { 
-  background: hsl(165, 33%, 50%);
+  /*background: hsl(165, 33%, 50%);*/
+  background: hsl(262,48%,34%);
   border-radius: 0;
   border: 0;
 }    
@@ -59,8 +60,9 @@ header{
   text-align: center;
 }
 #nav-list a:hover {
-  background: hsl(165, 35%, 75%);
-  color: hsl(165, 75%, 10%);
+  /*background: hsl(165, 35%, 75%);*/
+  background: hsl(262,50%,75%);
+  color: hsl(262, 75%, 10%);
   opacity: 1;
   border-radius: 5%;
 }
@@ -81,19 +83,19 @@ header{
 }
 h1, h2,nav{
   font-family: 'Lato', sans-serif;
-  color: hsl(360, 49%, 35%);
 }
 h1{
   font-size: 2em;
   text-align: center;
+  color: hsl(322, 48%, 34%);
 }
 h2{
   font-size: 1.7em;
-  color: hsl(360, 49%, 50%);
+  color: hsl(292, 48%, 34%);
 }
 h3{
   font-size: 1.2em;
-  color: hsl(165, 49%,30%);
+  color: hsl(322, 48%, 34%);
 }
 blockquote{
   margin-top: 25px;
@@ -104,14 +106,15 @@ blockquote{
 }
 .footer-style{
   height:100px;
-  background: hsl(165, 35%, 75%);
+  /*background: hsl(165, 35%, 75%);*/
+  background: hsl(262,50%,75%);
   text-align: center;
-  color: hsl(165, 75%, 10%);
+  color: hsl(262, 75%, 10%);
   margin-top: 100px;
 }
 .summary-deco{
-  background-color: hsl(360, 49%, 90%);
-  color: hsl(360, 49%, 20%);
+  background-color: hsl(262, 48%, 90%);
+  color: hsl(262, 49%, 20%);
   border-radius: 5px;
   padding: 5px;
   margin: 10px 0;
@@ -119,6 +122,10 @@ blockquote{
 }
 .minor-detail{
   font-size: 0.8em;
+}
+section:nth-child(even) {
+    background: hsl(0,1%,98%);
+    border-radius: 5px;
 }
 /********** Large devices only **********/
 @media (min-width: 1200px) {
