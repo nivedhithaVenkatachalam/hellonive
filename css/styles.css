@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   font-family: 'Noto Serif', serif;
   line-height: 1.7;
+  background: hsl(262,28%,97%); 
 }
 footer{
   font-size: 0.75em;
@@ -123,13 +124,22 @@ blockquote{
 .minor-detail{
   font-size: 0.8em;
 }
-section:nth-child(even) {
+section{
+  border-radius: 5px;
+}
+/*section:nth-child(even) {
     background: hsl(0,1%,98%);
-    border-radius: 5px;
+}*/
+.bg-white{
+  background-color: white;
+  border-radius: 5px; 
+}
+.extra-padding{
+  padding: 0 25px;
 }
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  section{
+  section,.bg-white{
     max-width: 700px;
     margin: 0 auto;
   }
@@ -145,7 +155,7 @@ section:nth-child(even) {
     margin: 5px 15px 5px 0;
   }
   /* End Header */
-  section{
+  section,.bg-white{
     max-width: 700px;
     margin: 0 auto;
   }
@@ -162,7 +172,7 @@ section:nth-child(even) {
   margin-top: 95px;
 }
   /* End Header */
-  section{
+  section, .bg-white{
     padding: 0 5px;
   }
 }
@@ -193,10 +203,6 @@ section:nth-child(even) {
     margin-right: 5px;
   }
   /* End Header */
-  .margin-sm{
-    margin: 15px;
-  }
-
 }
 /* Grow */
 .hvr-grow {
