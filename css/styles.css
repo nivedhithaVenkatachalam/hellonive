@@ -2,7 +2,7 @@
 body {
   font-size: 16px;
   font-family: 'Noto Serif', serif;
-  line-height: 2;
+  line-height: 1.7;
 }
 footer{
   font-size: 0.75em;
@@ -79,19 +79,24 @@ header{
 .main-header {
   margin-top: 85px;
 }
-h1, h2, h3,nav{
+h1, h2,nav{
   font-family: 'Lato', sans-serif;
-  color: hsl(360, 49%, 50%);
+  color: hsl(360, 49%, 35%);
 }
 h1{
   font-size: 2em;
   text-align: center;
 }
 h2{
-  font-size: 1.5em;
+  font-size: 1.7em;
+  color: hsl(360, 49%, 50%);
+}
+h3{
+  font-size: 1.2em;
+  color: hsl(165, 49%,30%);
 }
 blockquote{
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .center-pic{
   display: block;
@@ -102,6 +107,18 @@ blockquote{
   background: hsl(165, 35%, 75%);
   text-align: center;
   color: hsl(165, 75%, 10%);
+  margin-top: 100px;
+}
+.summary-deco{
+  background-color: hsl(360, 49%, 90%);
+  color: hsl(360, 49%, 20%);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+  outline: none;
+}
+.minor-detail{
+  font-size: 0.8em;
 }
 /********** Large devices only **********/
 @media (min-width: 1200px) {
