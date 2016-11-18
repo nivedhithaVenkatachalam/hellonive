@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   </head>
 </head>
 
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
+    <nav id="header-nav" class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <!-- <a href="index.html" class="pull-left visible-md visible-lg">
           <div id="logo-img"></div>
-          </a>
+          </a> -->
           <div class="navbar-brand">
             <a href="index.html"><h1 class="hvr-grow">Nivedhitha Venkatachalam</h1></a>
             <p><span>Front-end | Full-stack developer</span></p>
@@ -36,21 +37,45 @@
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li class="hvr-float">
-              <a href="#"><span>Projects</span></a>
+              <a href="#first-sec"><span>ABOUT ME</span></a>
             </li>
             <li class="hvr-float">
-              <a href="#"><span>About</span></a>
+              <a href="#second-sec"><span>PROJECTS</span></a>
             </li>
             <li class="hvr-float">
-              <a href="#"><span>Contact me</span></a>
+              <a href="#third-sec"><span>CONTACT</span></a>
             </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
       </div>
     </nav>
   </header>
-  <h1>Welcome to My Website!</h1>
-  
+  <h1 class="main-header">Welcome to My Website!</h1>
+  <!--1. About Me-->
+  <section id="first-sec" class="container">
+    <h2>About Me</h2>
+    <div class="row">
+      <blockquote>"Everything I know is but a drop in the ocean of knowledge."&nbsp;
+        <span>- Albert Einstein</span>
+      </blockquote>
+      <img src="./images/nivi.jpg" alt="nivi-profilePic" class="img-rounded center-pic">
+    </div>
+    <div class="row">
+      <p>
+        I am Nivedhitha Venkatachalam, graduating MS in Software Engineering at San Jose State University in December 2016. 
+      </p>
+      <p>
+        I am doing my internship as a Software Engineer in a startup - Flow Labs, where I am building a data visualizing dashboard using ReactJS and MeteorJS. I did my summer internship as an user interface developer at Pulse Secure (San Jose, CA). I used HTML5, SCSS and AngularJS to create a new module for an enterprise application. I used Git for version control and JIRA for tracking the several features and bugs that I worked on. I also used Bower for front end package management and grunt to ensure the code is of production quality. I worked at Cognizant Technology Solutions (Chennai, India) for 2 years 9 months in application development and support. My interests are in web application development, data analytics and cloud technologies. 
+      </p>
+      <p>
+        I am eager to take up new challenges which motivate me to learn new technologies and broaden my knowledge. 
+      </p>
+    </div>
+  </section>
+  <footer class="footer-style">
+    <p>All content copyright Nivedhitha Venkatachalam &copy; 2016 All rights reserved.</p>
+    <p>Published with <a href="https://github.com/nivedhithaVenkatachalam/hellonive">GitHub</a></p>
+   </footer>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

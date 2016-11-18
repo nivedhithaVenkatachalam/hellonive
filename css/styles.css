@@ -1,32 +1,35 @@
+
 body {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Serif', serif;
+  line-height: 2;
 }
-
+footer{
+  font-size: 0.75em;
+  width: 100%;
+}
 /** HEADER **/
-#header-nav {     
-  background: #BE93C5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #BE93C5, #7BC6CC);
-  background: -o-linear-gradient(right, #BE93C5, #7BC6CC);
-  background: linear-gradient(to left, #BE93C5, #7BC6CC); /* Chrome 10-25, Safari 5.1-6 */
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /*height:45px;*/  
+}
+#header-nav { 
+  background: hsl(165, 33%, 50%);
   border-radius: 0;
   border: 0;
 }    
-
 .navbar-brand {
   padding-top: 25px;
+  height: 80px;
 }
 .logo{
   width: 7em;
   padding: 5px;
 }
-#logo-img {
-  background: url('../images/nivi.jpg') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 20px 10px 0;
-}
-.navbar-brand h1 {
+.navbar-brand h1{
   font-family: 'Pacifico', cursive;
   color: #ffffff;
   font-size: 1.5em;
@@ -56,12 +59,14 @@ body {
   text-align: center;
 }
 #nav-list a:hover {
-  background: #6699ff;
-  opacity: 0.6;
+  background: hsl(165, 35%, 75%);
+  color: hsl(165, 75%, 10%);
+  opacity: 1;
+  border-radius: 5%;
 }
-#nav-list a span {
+/*#nav-list a span {
   font-size: 1.3em;
-}
+}*/
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #ffffff;
@@ -71,10 +76,39 @@ body {
   margin-top: -30px;
 }
 /* END HEADER */
-
+.main-header {
+  margin-top: 85px;
+}
+h1, h2, h3,nav{
+  font-family: 'Lato', sans-serif;
+  color: hsl(360, 49%, 50%);
+}
+h1{
+  font-size: 2em;
+  text-align: center;
+}
+h2{
+  font-size: 1.5em;
+}
+blockquote{
+  margin-top: 40px;
+}
+.center-pic{
+  display: block;
+  margin: 0px auto 40px auto;
+}
+.footer-style{
+  height:100px;
+  background: hsl(165, 35%, 75%);
+  text-align: center;
+  color: hsl(165, 75%, 10%);
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  section{
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 /********** Medium devices only **********/
@@ -87,6 +121,10 @@ body {
     margin: 5px 15px 5px 0;
   }
   /* End Header */
+  section{
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 /********** Small devices only **********/
@@ -96,12 +134,18 @@ body {
     padding-top: 10px;
     height: 80px;
   }
+  .main-header {
+  margin-top: 95px;
+}
   /* End Header */
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
+  .main-header {
+  margin-top: 95px;
+}
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
@@ -163,5 +207,9 @@ body {
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
+}
+.bg-light-gray {
+  background-color: #eeeeee;
+  padding: 10px;
 }
 
