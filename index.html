@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
   </head>
 </head>
 
@@ -50,20 +49,23 @@
       </div>
     </nav>
   </header>
-  <div class="bg-white">
+  <div class="bg-white container">
     <h1 class="main-header">Welcome to My Website!</h1>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <blockquote>"Everything I know is but a drop in the ocean of knowledge."&nbsp;
+          <span>- Albert Einstein</span>
+        </blockquote>
+        <img src="./images/nivi.jpg" alt="nivi-profilePic" class="img-rounded center-pic">
+    </div>
+  </div>
     <!--1. About Me-->
-    <section id="aboutme" class="container section-padding">
-      <h2>About Me</h2>
-      <div class="row">
-          <blockquote>"Everything I know is but a drop in the ocean of knowledge."&nbsp;
-            <span>- Albert Einstein</span>
-          </blockquote>
-          <img src="./images/nivi.jpg" alt="nivi-profilePic" class="img-rounded center-pic">
-      </div>
+    <section id="aboutme" class="section-padding">
+      <h2 class="fixednav-spacing">About Me</h2>
       <div class="row">
           <p class="para-padding">
-            I am Nivedhitha Venkatachalam, graduated MS in Software Engineering at San Jose State University in December 2016. I am a software engineer with 3 years of experience in application development. Looking for full-time opportunities. My
+            I am Nivedhitha Venkatachalam, new MS in Software Engineering graduate from San Jose State University. I am a software engineer with 3 years of experience in application development and actively looking for full-time opportunities. My
             skills include front-end and database development as well as object oriented programming.
           </p>
           <details>
@@ -138,17 +140,67 @@ Omniture), search engine optimization and Enterprise content management (Alfresc
           </details>
       </div>
     </section><!-- end of about me -->
-    <section id="projects" class="container section-padding">
-      <h2>Projects</h2>
+    <section id="projects" class="section-padding">
+      <h2 class="fixednav-spacing">Projects</h2>
+      <p class="para-padding">Below are snapshots of select projects that I have worked on.
+        You can checkout more projects on my <a href="https://github.com/nivedhithaVenkatachalam" target="_blank" rel="noreferrer">github</a>. </p>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 projects">
+          <div class="panel panel-default">
+            <div class="panel-header box-center course-title-index">Project Name</div>
+            <div class="panel-body">
+              <img class="img-course img-fluid" src="" alt="Project Img"/>
+            </div>
+            <div class="panel-footer box-center"><button class="btn btn-default btn-basics btn-view course-thumbnail-button hvr-grow" onclick="openDetails1()">View Details</button></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 projects">
+          <div class="panel panel-default">
+            <div class="panel-header box-center course-title-index">Project Name</div>
+            <div class="panel-body">
+              <img class="img-course img-fluid" src="" alt="Project Img"/>
+            </div>
+            <div class="panel-footer box-center"><button class="btn btn-default btn-basics btn-view course-thumbnail-button hvr-grow" onclick="openDetails1()">View Details</button></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 projects">
+          <div class="panel panel-default">
+            <div class="panel-header box-center course-title-index">Project Name</div>
+            <div class="panel-body">
+              <img class="img-course img-fluid" src="" alt="Project Img"/>
+            </div>
+            <div class="panel-footer box-center"><button class="btn btn-default btn-basics btn-view course-thumbnail-button hvr-grow" onclick="openDetails1()">View Details</button></div>
+          </div>
+        </div>
+      </div>
     </section><!-- end of projects -->
-    <section id="contact" class="container section-padding">
-      <h2>Contact</h2>
+    <section id="contact" class="section-padding">
+      <h2 class="fixednav-spacing">Contact</h2>
+      <p class="para-padding"> If I match the requirements for any available positions,
+        please send me an email to the email address given below
+        or connect with me on <a href="https://www.linkedin.com/in/nivedhithavenkatachalam" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
+      <div class="para-padding">Email address: nivedhithavenkatachalam@gmail.com</div>
     </section><!-- end of contact -->
   </div><!-- end of bg-white class -->
   <footer class="footer-style">
     <p>All content copyright Nivedhitha Venkatachalam &copy; 2016 All rights reserved.</p>
     <p>Published with <a href="https://github.com/nivedhithaVenkatachalam/hellonive">GitHub</a></p>
    </footer>
+   <a id="project1" href="#openProject1">Project1</a>
+
+<div id="openProject1" class="modalDialog">
+  <div id="project1id">
+    <a href="#close" title="Close" class="close">X</a>
+    <h2>Project Details</h2>
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-xs-12">
+          Hello!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

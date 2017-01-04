@@ -1,7 +1,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
   background: hsl(262,28%,97%);
 }
@@ -15,6 +15,7 @@ header{
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
   /*height:45px;*/
 }
 #header-nav {
@@ -24,15 +25,17 @@ header{
   border: 0;
 }
 .navbar-brand {
-  padding-top: 25px;
-  height: 80px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  height: 75px;
 }
 .logo{
   width: 7em;
   padding: 5px;
 }
 .navbar-brand h1{
-  font-family: 'Pacifico', cursive;
+  font-family: 'Lato',sans-serif;
+  font-style: italic;
   color: #ffffff;
   font-size: 1.5em;
   text-shadow: 1px 1px 1px #222;
@@ -101,9 +104,15 @@ h3{
 blockquote{
   margin-top: 25px;
 }
+.fixednav-spacing{
+    margin-bottom: 45px;
+}
 .center-pic{
   display: block;
   margin: 0px auto 40px auto;
+}
+.bg-image{
+  background: url('../images/bg-t.jpg') no-repeat;
 }
 .footer-style{
   height:100px;
@@ -140,6 +149,121 @@ section{
 .para-padding{
   padding: 0 5px;
 }
+.btn-basics {
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 300;
+  opacity: 0.9;
+  box-shadow: 1px 1px 2px grey; }
+.img-course {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+  background: #FFF;
+  border-radius: 5px;
+  opacity: .8;
+}
+.course-title-index{
+  background-color: hsl(262, 48%, 90%);
+  color: hsl(262, 49%, 20%);
+  text-transform: uppercase;
+  height: 40px;
+}
+.panel-footer{
+  background-color: hsl(262, 48%, 90%);
+}
+.box-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-view {
+  background: hsl(262, 49%, 40%); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, hsl(262, 49%, 40%), #762d80); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, hsl(262, 49%, 40%) , #762d80);
+  color:white;
+}
+.btn-view:hover{
+  color: white;
+  outline: none;
+}
+.btn-view:focus{
+  outline: none;
+  color: white;
+}
+.course-thumbnail-button {
+	width: 100%;
+}
+.modalDialog {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0.8);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+}
+
+.modalDialog:target {
+opacity:1;
+pointer-events: auto;
+}
+
+.modalDialog > div {
+width: 80%;
+height: 80%;
+overflow: auto;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+background: #fff;
+background: -moz-linear-gradient(#fff, #999);
+background: -webkit-linear-gradient(#fff, #999);
+background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+background: #762d80;
+color: #FFFFFF;
+line-height: 25px;
+position: absolute;
+right: 5px;
+text-align: center;
+top: 5px;
+width: 24px;
+text-decoration: none;
+font-weight: bold;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+#openModal{
+z-index: 99999;
+}
+.close:hover {
+  background: hsl(262, 49%, 40%);
+}
+#project1{
+display: none;
+}
+.modal-content{
+  background: white;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   section,.bg-white{
@@ -148,6 +272,7 @@ section{
   }
   li.tools:before{
     content: "* ";
+    font-weight: bold;
   }
   li.tools{
     display: inline-block;
@@ -171,10 +296,15 @@ section{
   }
   li.tools:before{
     content: "* ";
+    font-weight: bold;
   }
   li.tools{
     display: inline-block;
     margin-right: 5px;
+  }
+  .modalDialog > div {
+    width:900px;
+    max-height: 100%;
   }
 }
 
@@ -196,6 +326,7 @@ section{
   }
   li.tools:before{
     content: "* ";
+    font-weight: bold;
   }
   li.tools{
     display: inline-block;
@@ -211,7 +342,7 @@ section{
 }
   .navbar-brand {
     padding-top: 10px;
-    height: 80px;
+    height: 65px;
   }
   .navbar-brand h1 {
     padding-top: 10px;
@@ -229,6 +360,12 @@ section{
     margin-right: 5px;
   }
   /* End Header */
+  .fixednav-spacing{
+      margin-bottom: 50px;
+  }
+  .projects{
+    width: 100%;
+  }
 }
 /* Grow */
 .hvr-grow {
