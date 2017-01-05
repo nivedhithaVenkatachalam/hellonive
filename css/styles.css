@@ -101,6 +101,11 @@ h3{
   font-size: 1.2em;
   color: hsl(322, 48%, 34%);
 }
+h4{
+  font-size: 1em;
+  font-weight: bold;
+}
+
 blockquote{
   margin-top: 25px;
 }
@@ -149,6 +154,21 @@ section{
 .para-padding{
   padding: 0 5px;
 }
+.modal-padding{
+  padding: 0 30px;
+}
+.modal-padding p{
+  font-size: 0.8em;
+}
+.project-carousel{
+  margin-top:10px;
+}
+.project-carousel figcaption{
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #762d80;
+}
 .btn-basics {
   border: none;
   cursor: pointer;
@@ -160,7 +180,19 @@ section{
 .img-course {
   max-width: 100%;
   width: 200px;
-  height: 200px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+  background: #FFF;
+  border-radius: 5px;
+  opacity: .8;
+}
+.img-modal {
+  max-width: 100%;
+  width: 300px;
+  height: 400px;
   top: 0;
   left: 0;
   display: block;
@@ -258,11 +290,29 @@ z-index: 99999;
 .close:hover {
   background: hsl(262, 49%, 40%);
 }
-#project1{
+#project1, #project2, #project3{
 display: none;
 }
 .modal-content{
   background: white;
+}
+.project-imgs{
+  height:400px;
+}
+.carousel-indicators li{
+  background: #af5fdf;
+  border-color: hsl(262, 49%, 60%);
+}
+.carousel-indicators .active{
+  background: hsl(262, 49%, 40%);
+}
+.carousel-indicators{
+  bottom: -10px;
+}
+.carousel-caption h3{
+  color: black;
+  font-size: 0.8;
+  font-weight: bold;
 }
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -277,6 +327,9 @@ display: none;
   li.tools{
     display: inline-block;
     margin-right: 5px;
+  }
+  .carousel-indicators{
+    bottom: -10px;
   }
 }
 
@@ -306,6 +359,9 @@ display: none;
     width:900px;
     max-height: 100%;
   }
+  .carousel-indicators{
+    bottom: -10px;
+  }
 }
 
 /********** Small devices only **********/
@@ -331,6 +387,9 @@ display: none;
   li.tools{
     display: inline-block;
     margin-right: 5px;
+  }
+  .carousel-indicators{
+    bottom: -10px;
   }
 }
 
@@ -365,6 +424,17 @@ display: none;
   }
   .projects{
     width: 100%;
+  }
+  .carousel-indicators{
+    bottom: -10px;
+  }
+  .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+  }
+  .carousel-indicators .active{
+    width: 7px;
+    height: 7px;
   }
 }
 /* Grow */
