@@ -201,6 +201,10 @@ section{
   border-radius: 5px;
   opacity: .8;
 }
+.img-wide{
+  width: 500px;
+  height: 300px;
+}
 .course-title-index{
   background-color: hsl(262, 48%, 90%);
   color: hsl(262, 49%, 20%);
@@ -226,6 +230,10 @@ section{
   outline: none;
 }
 .btn-view:focus{
+  outline: none;
+  color: white;
+}
+.btn-view:active{
   outline: none;
   color: white;
 }
