@@ -91,8 +91,10 @@ section h2{
 h3{
   font-size: 1.2em;
   color: #841983;
+  font-weight: bold;
+}
+.modalDialog h3{
   text-align: center;
-  font-style: bold;
   text-transform: uppercase;
 }
 h4{
@@ -317,6 +319,16 @@ display: none;
   font-size: 0.8;
   font-weight: bold;
 }
+.bg-white a{
+  color: #005550;
+  font-weight: bold;
+}
+a:hover, a:visited, a:focus{
+  text-decoration: none;
+}
+.bg-white a:hover{
+  color: #7387f0;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   section,.bg-white{
@@ -334,6 +346,9 @@ display: none;
   }
   .carousel-indicators{
     bottom: -10px;
+  }
+  .modalDialog{
+    top: -110px;
   }
 }
 
@@ -374,6 +389,7 @@ display: none;
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
+    margin-right: -15px;
   }
   .main-header {
   margin-top: 85px;
